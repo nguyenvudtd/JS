@@ -234,10 +234,10 @@ const init = async () => {
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     // Render loading
     //postsList
-    var li = document.querySelectorAll('#postsList > li');
-    var listLength = li.length;
+    let li = document.querySelectorAll('#postsList > li');
+    let listLength = li.length;
 
-    for (var i = listLength - 1; i >= 0; i--) {
+    for (let i = listLength - 1; i >= 0; i--) {
       li[i].parentNode.removeChild(li[i]);
     }
     //?_page=2&_limit=6
@@ -324,11 +324,11 @@ const init = async () => {
     }
 
     ///////////////////////////////////////////////////////
-    var elementsPagination = document.querySelector('#postsPagination');
+    let elementsPagination = document.querySelector('#postsPagination');
     elementsPagination.removeAttribute('hidden')
     //++++++++++++++++++++++++++++++++++++++++++++++++++
     //const buttonPrevious = document.querySelector('#postsPagination>li>a');
-    var buttonPrevious = document.querySelector('[aria-label="Previous"]');
+    let buttonPrevious = document.querySelector('[aria-label="Previous"]');
     if (buttonPrevious) {
       buttonPrevious.addEventListener('click', () => {
         console.log('Previous')
@@ -358,7 +358,7 @@ const init = async () => {
 
     }
 
-    var buttonNext = document.querySelector('[aria-label="Next"]');
+    let buttonNext = document.querySelector('[aria-label="Next"]');
     if (buttonNext) {
       buttonNext.addEventListener('click', () => {
         console.log('Next')
